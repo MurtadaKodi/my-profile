@@ -1,0 +1,71 @@
+.--card-container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.--card {
+  box-shadow: 0 2px 5px 0 var(--secondary-color);
+  transition: 0.3s;
+  width: 20%;
+  gap: 30px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  margin: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1rem;
+  border-color: var(--primary-color);
+
+}
+
+.--card:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  background: transparent;
+  border: .2px solid var(--secondary-color);
+  border-color: var(--secondary-color);
+  scale: 1.02;
+}
+/* .--card img:hover{
+  scale: 1.3;
+} */
+ .--title{
+  text-align: center;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  margin: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+ }
+
+.--container {
+  padding: 2px 16px;
+  
+}
+.--card-title{
+  text-align: center;
+  padding: 8px;
+}
+.--card-descripe{
+  line-height: 2;
+  font-size: 16px;
+
+}
+@media (max-width:600px) {
+  .--card-container{
+    
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+    /* border: 1px solid rgb(32, 34, 142); */
+    
+
+  }
+  .--card{
+    
+    width: 80%;
+    /* border: 1px solid red; */
+  }
+}

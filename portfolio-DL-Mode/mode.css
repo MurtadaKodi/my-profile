@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+}
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color:#212121;
+
+}
+.dark-theme{
+  --primary-color:#212121;
+  --secondary-color:#edf2fc;
+}
+
+#icon{
+width: 30px;
+cursor: pointer;
+}
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-color);
+  position: relative;
+}
+nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+nav ul li a:hover{
+  scale: 1.09;
+  border: 1px solid var(--secondary-color);
+  padding: 5px 20px;
+  border-radius: 20px 0;
+  transition: 0.5s ease all;
+}
+.info{
+  
+  margin-left: 8%;
+  margin-top: 2%;
+  
+}
+.info h1{
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+} 
+.info h2{
+  font-size: 30px;
+  font-style: italic;
+  text-transform: capitalize;
+  
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+} 
+span{
+  color: #ff4321;
+}
+.info p{
+  text-align: left;
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--secondary-color);
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.info a{
+  background: var(--secondary-color);
+  padding: 10px 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.img-box{
+  width: 40%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  
+
+}
+  .img-box img{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+  }
+  .img-box:hover .back-img{
+    bottom: 40%;
+  }
+  .img-box:hover .main-img{
+    left: 54%;
+
+  }
+.skills{
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  nav{
+    width: 90%;
+    margin: auto;
+    padding: 20px 5px;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+}
+
